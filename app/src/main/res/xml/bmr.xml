@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+            android:title="@string/sexx"
+            android:key="sex"
+            android:defaultValue="true"
+            android:entryValues="@array/sex_values"
+            android:entries="@array/sex_entries"/>
+    <EditTextPreference
+            android:key="weight"
+            android:title="@string/weight"
+            android:defaultValue="70.0"
+            android:inputType="numberDecimal"/>
+    <EditTextPreference
+            android:key="height"
+            android:title="@string/height"
+            android:defaultValue="170"
+            android:inputType="numberDecimal"/>
+    <EditTextPreference
+            android:key="age"
+            android:title="@string/age"
+            android:defaultValue="24"
+            android:inputType="numberDecimal"/>
+    <ListPreference
+            android:title="@string/level_sport"
+            android:key="level"
+            android:defaultValue="1.2"
+            android:entryValues="@array/level_values"
+            android:entries="@array/level_entries"/>
+
+    <ListPreference
+            android:title="@string/target"
+            android:key="target"
+            android:defaultValue="@string/default_target"
+            android:entryValues="@array/target_values"
+            android:entries="@array/target_entries"/>
+</PreferenceScreen>

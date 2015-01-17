@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.korzinni.shura.nutrition"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8"/>
+    <application
+                 android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:theme="@style/CustomActionBarTheme">
+
+        <activity android:name="com.korzinni.shura.nutrition.Nutrition"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable"
+                       android:value=".SearchableActivity"/>
+        </activity>
+
+        <activity android:name="com.korzinni.shura.nutrition.fragments.SettingsBMR"/>
+
+
+
+
+        <provider
+                android:authorities="com.korzinin.Nutrition.provider"
+                android:name="com.korzinni.shura.nutrition.content.MyContentProvider"
+                />
+    </application>
+</manifest>

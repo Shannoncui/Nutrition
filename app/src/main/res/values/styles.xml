@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customTheme" parent="android:Theme.Black">
+        <item name="android:windowBackground">@color/bistr</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/light_hakki</item>
+
+
+
+    </style>
+
+
+
+</resources>
