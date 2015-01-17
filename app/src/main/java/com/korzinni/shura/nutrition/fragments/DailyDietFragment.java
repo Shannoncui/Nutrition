@@ -36,7 +36,10 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-
+/*
+* fragment - container for several other fragments MealFragments
+* in the DB DailyDiet it is list of Meal + date
+* */
 public class DailyDietFragment extends Fragment {
     public static final String MEAL="meal";
     public static final String DAILY_DIET="dailyDiet";
@@ -149,10 +152,8 @@ public class DailyDietFragment extends Fragment {
         int i=0;
         for(Meal m:meals) {
             MealFragment fragment = (MealFragment) getChildFragmentManager().findFragmentByTag(MEAL + i);
-            //Log.d("tag","finded MealFragment not null:"+(fragment!=null));
             if (fragment == null) {
                 fragment = MealFragment.newInstance(m, MEAL + i);
-                //Log.d("tag","new MealFragment :"+fragment.toString());
             }else{
                 fragment.setMeal(m);
             }

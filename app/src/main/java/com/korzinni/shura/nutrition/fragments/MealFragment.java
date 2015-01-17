@@ -71,19 +71,15 @@ public class MealFragment extends Fragment implements View.OnClickListener,View.
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-       // Log.d("tag","onCreate :"+toString());
         ingredients=new SparseArray<View>();
         TAG=getArguments().getString(STORE_TAG);
         super.onCreate(savedInstanceState);
         if(savedInstanceState!=null){
             meal=savedInstanceState.getParcelable(MEAL);
-           // Log.d("tag","restore meal");
         }else{
             meal=getArguments().getParcelable(MEAL);
-           // Log.d("tag","meal from args");
             if(meal==null){
                 meal=new Meal();
-               // Log.d("tag","new meal");
             }
         }
 
